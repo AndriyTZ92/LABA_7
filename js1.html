@@ -1,39 +1,38 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-  </head>
-  <body>
-    <script>
-        function Chil1(){
-        
-        
-        
-            if (x&1){
-                y = 'нечетное';
-            
-            }
-            
-            else if((x%2)==0){
-                y='четное';
-            }
-            else {
-                y='Перевірте значення'
-            }
-        }
-        let x = prompt('Ведіть число для перевірки на парність', '');
-        let y;
-        
-        Chil1();
-        
-            alert(y);
-        
-        </script>
-         
-        
-  </body>
-  </html> 
+<!DOCTYPE html> 
+<html> 
+<head> 
 
+</head> 
+<body> 
+<script type="text/javascript">
+  
+   alert(Par(5));
+    
+
+function Par(x) {
+  
+ 
+ var y =   Number.isInteger(x);
+
+  if(y){
+
+
+    if(x%2==0){
+
+      return("Pair");
+    }
+    else{
+      return ("Unpaired");
+    }
+  }
+  else{
+
+    return "";
+
+  }
+}
+
+</script>
+
+</body> 
+</html>

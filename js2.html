@@ -1,52 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+<!DOCTYPE html> 
+<html> 
+<head> 
 
-        var arr2 = [];
-        function Chisl(count){
-        for ( i = 0; arr2.length<5 ; i++ ) {
-        
-            count=1;
-            for (var j = 0; j < Math.floor(Math.random() * 30 ); j++) {
-                count++;
-            
-            
-               
-            }
-         
-            
-            if(count%1==0){
-                arr2.push(count)
-               }
-        
-        }
-        
-        }
-        
-        function arraySum(array){
-        var sum = 0;
-        for(var i = 0; i < array.length; i++){
-        sum += array[i];
-        }
-        
-        alert('Cума масиву, який створився рандомно: '+sum)
-        alert('Cам масив: '+ arr2)
-        }
-        
-        
-        Chisl();
-        arraySum(arr2);
-        
-        
-        </script>
-</body>
+</head> 
+<body> 
+<script type="text/javascript">
+ 
+function Suma() {
+  var x  = [];
+
+
+
+
+var i = 1;
+while(true){
+
+
+   var simpl = true;
+   for(var y = 2; y < i; y++){
+
+      if(i%y==0){
+
+        simpl = false;
+        break;
+      }
+
+
+
+   }
+
+   if (simpl){
+
+    x.push(i);
+   }
+
+
+   i++;
+
+
+   if(x.length==5){
+
+
+     var summ = 0;
+    for (var l = 0 ; l < x.length; l++){
+
+        summ += x[l];
+
+
+    }
+    return (summ);
+    break;
+
+
+
+   }
+
+
+
+
+
+
+
+}
+
+}
+
+
+alert(Suma());
+
+</script>
+
+</body> 
 </html>
-
-
